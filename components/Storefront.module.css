@@ -1,0 +1,224 @@
+.page {
+  min-height: 100vh;
+  max-width: 560px;
+  margin: 0 auto;
+  padding-bottom: 48px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 24px 28px;
+  background: linear-gradient(180deg, var(--color-brand-tint) 0%, var(--color-bg) 100%);
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--color-brand);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 600;
+  overflow: hidden;
+  box-shadow: var(--shadow-lift);
+  margin-bottom: 14px;
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.storeName {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0 0 6px;
+  color: var(--color-ink);
+}
+
+.category {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-brand-deep);
+  background: var(--color-surface);
+  border: 1px solid var(--color-brand);
+  border-radius: 999px;
+  padding: 4px 12px;
+  margin-bottom: 10px;
+}
+
+.bio {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--color-ink-soft);
+  max-width: 380px;
+  margin: 0;
+}
+
+.welcomeBack {
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-brand-deep);
+  background: var(--color-surface);
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+.poweredBy {
+  margin-top: 18px;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+  opacity: 0.7;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px 16px 0;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--color-ink-soft);
+}
+
+.card {
+  display: flex;
+  gap: 14px;
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: 14px;
+}
+
+.cardImage {
+  flex-shrink: 0;
+  width: 86px;
+  height: 86px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--color-brand-tint);
+}
+
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardImagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    135deg,
+    var(--color-brand-tint),
+    var(--color-brand-tint) 8px,
+    #ffffff 8px,
+    #ffffff 16px
+  );
+}
+
+.cardBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.cardCategory {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+}
+
+.cardName {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 2px 0 6px;
+  color: var(--color-ink);
+  line-height: 1.3;
+}
+
+.cardPriceRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.cardPrice {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-brand-deep);
+}
+
+.badgeIn,
+.badgeLow,
+.badgeOut {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.badgeIn {
+  background: var(--color-brand-tint);
+  color: var(--color-brand-deep);
+}
+
+.badgeLow {
+  background: var(--color-accent-tint);
+  color: var(--color-accent);
+}
+
+.badgeOut {
+  background: rgba(179, 66, 47, 0.1);
+  color: var(--color-danger);
+}
+
+.orderButton {
+  margin-top: auto;
+  background: #25d366;
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius-control);
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.12s ease, opacity 0.12s ease;
+  /* Stamped/ticket feel referenced in the design plan: a subtle inset edge
+     rather than a flat fill, evoking a handed-over receipt. */
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18), 0 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.orderButton:active {
+  transform: scale(0.98);
+}
+
+.orderButton:disabled {
+  background: var(--color-line);
+  color: var(--color-ink-soft);
+  cursor: not-allowed;
+  box-shadow: none;
+}

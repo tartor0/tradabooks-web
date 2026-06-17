@@ -15,7 +15,7 @@ export async function generateMetadata({
   if (!store) return { title: 'Store not found — TradaBooks' };
   return {
     title: `${store.store_name} — TradaBooks`,
-    description: store.bio ?? `Shop ${store.store_name}'s products directly on WhatsApp.`,
+    description: `Shop ${store.store_name}'s products directly on WhatsApp.`,
   };
 }
 

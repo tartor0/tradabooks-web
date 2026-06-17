@@ -64,8 +64,8 @@ export function StorefrontClient({
           )}
         </div>
         <h1 className={styles.storeName}>{store.store_name}</h1>
-        {store.category && <span className={styles.category}>{store.category}</span>}
-        {store.bio && <p className={styles.bio}>{store.bio}</p>}
+        {/* {store.category && <span className={styles.category}>{store.category}</span>}
+        {store.bio && <p className={styles.bio}>{store.bio}</p>} */}
 
         {savedIdentity && (
           <p className={styles.welcomeBack}>Welcome back, {savedIdentity.name.split(' ')[0]} 👋</p>
